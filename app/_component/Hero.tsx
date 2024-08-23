@@ -13,7 +13,7 @@ const Hero = () => {
 <div className="flex flex-col overflow-hidden  ">
       <ContainerScroll
         titleComponent={
-          <div className='mb-4 -mt-60 md:-mt-60 justify-center flex flex-col items-center'>
+          <div className='mb-4 -mt-40 md:-mt-60 justify-center flex flex-col items-center'>
             <h1 className="text-xl text-white md:text-[6rem] font-extrabold mt-1 leading-none">
               <span className='text-red-700'> Diguina AI</span> Generator
             </h1>

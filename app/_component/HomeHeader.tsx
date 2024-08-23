@@ -11,7 +11,7 @@ import React from 'react'
 const HomeHeader = () => {
 
   return (
-    <div className='bg-white p-4 flex justify-between shadow-sm shadow-blue-950 rounded-md items-center  '>
+    <div className='bg-white p-4 flex justify-between shadow-sm shadow-blue-950 rounded-md items-center   '>
         <Image
             src='/logo.png' 
             alt="Diguina AI Generator transforming ideas into high-quality content"
