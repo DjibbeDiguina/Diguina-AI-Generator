@@ -1,10 +1,7 @@
-import type { Metadata } from "next";
-import { Inter } from "next/font/google";
-import "./globals.css";
-import { ClerkProvider } from "@clerk/nextjs";
-import HomeHeader from "./_component/HomeHeader";
-
-const inter = Inter({ subsets: ["latin"] });
+import React from 'react'
+import SideNav from './_components/SideNav';
+import Header from './_components/Header';
+import { Metadata } from 'next';
 
 export const metadata: Metadata = {
   title: "Diguina AI Generator | Effortlessly Generate High-Quality Content with AI",
@@ -21,25 +18,29 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Diguina AI Generator",
     description: "Effortlessly generate high-quality content with AI.",
-   
+    
   },
 };
 
-export default function RootLayout({
-  children,
-}: Readonly<{
-  children: React.ReactNode;
-}>) {
+
+const layout = ({
+    children,
+  }: Readonly<{
+    children: React.ReactNode;
+  }>) => {
   return (
-    <ClerkProvider>
-    <html lang="en">
-      <body className={inter.className}>
-        <div>
-        
-        {children}
+    <div >
+        <div className='md:w-64 hidden md:block fixed'>
+            <SideNav />
         </div>
-        </body>
-    </html>
-    </ClerkProvider>
-  );
+
+        <div className='md:ml-64'>
+            <Header />
+            {children}
+        </div>
+        
+    </div>
+  )
 }
+
+export default layout
