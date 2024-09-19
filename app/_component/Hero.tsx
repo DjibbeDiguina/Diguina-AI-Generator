@@ -15,7 +15,7 @@ const Hero = () => {
         titleComponent={
           <div className='mb-4 -mt-40 md:-mt-60 justify-center flex flex-col items-center'>
             <h1 className="text-xl text-white md:text-[6rem] font-extrabold mt-1 leading-none">
-              <span className='text-red-700'> Diguina AI</span> Generator
+              <span className='text-red-700'> Diguina AI </span> Generator
             </h1>
              <p className=" md:text-lg  p-4  text-white ">
                Effortlessly generate high-quality content with the power of AI. From text to visuals, diguina-Ai transforms your ideas into polished content in seconds—no coding, no hassle.
